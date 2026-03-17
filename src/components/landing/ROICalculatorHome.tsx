@@ -5,31 +5,31 @@ import { TrendingUp, Target, Briefcase, Palette, Home, BarChart3 } from "lucide-
 const businessTypes = [
   {
     id: "retail",
-    name: "Ритейл",
+    name: "Валюта",
     icon: <Briefcase className="w-6 h-6" />,
     multiplier: 3.2,
-    description: "E-commerce и магазины",
+    description: "Внутриигровые монеты",
   },
   {
     id: "real-estate",
-    name: "Недвижимость",
+    name: "Аккаунты",
     icon: <Home className="w-6 h-6" />,
     multiplier: 4.1,
-    description: "Агенты и управление",
+    description: "Готовые персонажи",
   },
   {
     id: "artist",
-    name: "Креатив",
+    name: "Предметы",
     icon: <Palette className="w-6 h-6" />,
     multiplier: 2.8,
-    description: "Блогеры и артисты",
+    description: "Скины и артефакты",
   },
   {
     id: "professional",
-    name: "B2B услуги",
+    name: "Буст",
     icon: <Target className="w-6 h-6" />,
     multiplier: 3.7,
-    description: "Консалтинг и сервисы",
+    description: "Прокачка и рейтинг",
   },
 ]
 
@@ -66,9 +66,9 @@ export default function ROICalculatorHome() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">Рассчитайте ROI</h2>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">Сколько можно заработать?</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Узнайте, какую выручку вы можете получить с нашими маркетинговыми стратегиями
+            Рассчитай потенциальный доход от продаж на Skillz Market по категории
           </p>
         </motion.div>
 
@@ -93,7 +93,7 @@ export default function ROICalculatorHome() {
             <div className="space-y-8">
               {/* Business Type Selection */}
               <div>
-                <label className="block text-lg font-medium text-white mb-4">Выберите тип бизнеса</label>
+                <label className="block text-lg font-medium text-white mb-4">Выберите категорию товаров</label>
                 <div className="grid grid-cols-2 gap-3">
                   {businessTypes.map((business) => (
                     <motion.button
@@ -127,7 +127,7 @@ export default function ROICalculatorHome() {
 
               {/* Budget Slider */}
               <div>
-                <label className="block text-lg font-medium text-white mb-4">Месячный бюджет на маркетинг</label>
+                <label className="block text-lg font-medium text-white mb-4">Стартовый капитал для закупки</label>
                 <div className="relative">
                   <input
                     type="range"
@@ -156,11 +156,11 @@ export default function ROICalculatorHome() {
               <div className="bg-gray-800/30 border border-gray-700/50 rounded-xl p-4">
                 <div className="flex items-center space-x-3 mb-2">
                   <BarChart3 className="w-5 h-5 text-blue-400" />
-                  <span className="text-sm font-medium text-white">На основе реальных данных</span>
+                  <span className="text-sm font-medium text-white">На основе реальных сделок</span>
                 </div>
                 <p className="text-xs text-gray-400 leading-relaxed">
-                  Прогнозы основаны на реальных показателях наших клиентов из аналогичных
-                  отраслей и бюджетных категорий. Индивидуальные результаты могут отличаться.
+                  Прогнозы основаны на реальных показателях продавцов Skillz Market в аналогичных
+                  категориях. Индивидуальные результаты могут отличаться.
                 </p>
               </div>
             </div>

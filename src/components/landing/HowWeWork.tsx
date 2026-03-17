@@ -4,24 +4,24 @@ import { Search, Lightbulb, Rocket } from "lucide-react"
 const steps = [
   {
     number: "01",
-    title: "Анализ и стратегия",
-    description: "Глубоко погружаемся в ваши задачи, исследуем идеи и формируем стратегию для долгосрочного успеха.",
+    title: "Найди нужное",
+    description: "Выбери игру, категорию товара или услуги. Используй фильтры по цене, рейтингу продавца и наличию.",
     icon: <Search className="w-8 h-8" />,
     mockup: "discovery",
-    gradient: "from-blue-500/20 to-blue-600/10",
+    gradient: "from-cyan-500/20 to-cyan-600/10",
   },
   {
     number: "02",
-    title: "Разработка и тесты",
-    description: "Создаем решения под ваши цели и тщательно тестируем их для максимальной надежности.",
+    title: "Оформи сделку",
+    description: "Выбери лучшее предложение и оплати. Средства заморозятся в Escrow — продавец получит деньги только после передачи товара.",
     icon: <Lightbulb className="w-8 h-8" />,
     mockup: "development",
-    gradient: "from-purple-500/20 to-purple-600/10",
+    gradient: "from-violet-500/20 to-violet-600/10",
   },
   {
     number: "03",
-    title: "Запуск и поддержка",
-    description: "Бесшовно внедряем решение и обеспечиваем его стабильную работу с постоянной поддержкой.",
+    title: "Получи и подтверди",
+    description: "Получи товар, проверь и подтверди сделку. Деньги уйдут продавцу, а ты оставишь отзыв.",
     icon: <Rocket className="w-8 h-8" />,
     mockup: "launch",
     gradient: "from-green-500/20 to-green-600/10",
@@ -39,9 +39,9 @@ export default function HowWeWork() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">Как мы работаем</h2>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">Как это работает</h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Простой и эффективный подход к развитию вашего бренда на высшем уровне.
+            Три простых шага до безопасной игровой сделки.
           </p>
         </motion.div>
 
@@ -135,19 +135,19 @@ export default function HowWeWork() {
                         <div className="space-y-2">
                           <div className="flex items-center space-x-2">
                             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                            <div className="text-xs text-gray-300">Безопасность</div>
+                            <div className="text-xs text-gray-300">Escrow активен</div>
                           </div>
                           <div className="flex items-center space-x-2">
                             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                            <div className="text-xs text-gray-300">Эффективность</div>
+                            <div className="text-xs text-gray-300">Продавец верифицирован</div>
                           </div>
                           <div className="flex items-center space-x-2">
                             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                            <div className="text-xs text-gray-300">Скорость</div>
+                            <div className="text-xs text-gray-300">Товар передан</div>
                           </div>
                           <div className="flex items-center space-x-2">
                             <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                            <div className="text-xs text-gray-300">Обновление...</div>
+                            <div className="text-xs text-gray-300">Подтверждение...</div>
                           </div>
                         </div>
                       </div>

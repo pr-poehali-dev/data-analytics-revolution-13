@@ -49,8 +49,8 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <a href="/" className="flex items-center space-x-3">
-                <span className="text-xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Pulse Digital
+                <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
+                  Skillz Market
                 </span>
               </a>
             </div>
@@ -61,10 +61,10 @@ export default function Navbar() {
                   Услуги
                 </a>
                 <a href="#artists" className="text-sm text-gray-300 hover:text-purple-400 transition-colors">
-                  Клиенты
+                  Категории
                 </a>
                 <a href="#success-stories" className="text-sm text-gray-300 hover:text-green-400 transition-colors">
-                  Кейсы
+                  Сделки
                 </a>
                 <a href="#contact" className="text-sm text-gray-300 hover:text-orange-400 transition-colors">
                   Контакты
@@ -78,7 +78,7 @@ export default function Navbar() {
               </Button>
               <a href="#get-started">
                 <AnimatedButton size="sm" className="bg-white text-black hover:bg-gray-100">
-                  Начать
+                  Войти в маркет
                 </AnimatedButton>
               </a>
             </div>
